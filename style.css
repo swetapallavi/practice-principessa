@@ -1,0 +1,246 @@
+/* Global view / large screen view  */
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+header {
+	min-height: 20px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.logo {
+	height: 100%;
+	width: 25%;
+}
+
+.logo img {
+	height: clamp(90px, 100%, 200px);
+	width: clamp(120px, 100%, 500px);
+	display: block;
+}
+
+nav {
+	width: 70%;
+	display: flex;
+	align-items: center;
+}
+
+.navbutton {
+	padding: 7px; 
+	margin: auto;
+	text-decoration: none;
+	font-size: clamp(11px, 1vw, 25px);
+	font-weight: 700;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbutton:hover {
+	background-color: black;
+	transition-duration: 0.75ms;
+	color: white;
+	border-color: white;
+	border-style: double;
+}
+
+i {
+	font-size: clamp(20px, 5vw, 25px);
+	margin: 0 10px;
+}
+
+.nav-wrapper {
+	display: none;
+}
+
+.mybutton {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	padding: 5px;
+	font-size: clamp(10px, 1.3vw, 12px);
+	font-weight: 600;
+	margin-left: -60px;
+	background-color: rgba(97, 88, 88, 0.103);
+}
+
+.mybutton:hover {
+	background-color: black;
+	transition-duration: 0.75ms;
+	color: white;
+	border-color: white;
+	border-style: double;
+}
+
+.menu-bar {
+	display: none;
+	position: absolute;
+	padding-right: 7px;
+}
+
+
+/* small screen view */
+@media (max-width: 990px) {
+
+nav {
+	width: 100%;
+	display: none;
+}	
+
+.nav-wrapper {
+	display: block;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-bar {
+	display: block;
+}
+
+}
+
+main {
+	min-height: 60px;
+	margin-bottom: 20px;
+}
+
+main img {
+	width: 100%;
+	height: 100%;
+	display: block;
+} 
+
+.herobox {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+}
+
+.herobox1, .herobox2, .herobox3 {
+	height: 25vw;
+	width: 32%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.herobox1 {
+	background-image: url(https://i.postimg.cc/fRqZ7Gjs/quinceanera.jpg);
+}
+
+.herobox2 {
+	background-image: url(https://i.postimg.cc/CxRPnXc9/prom-dress.jpg);
+}
+
+.herobox3 {
+	background-image: url(https://i.postimg.cc/Kc1TnbPG/anos-dresses1.jpg);
+}
+
+.herobox4 {
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+}
+
+.herobox5 {
+	height: 30%;
+	width: 75%; 
+	margin: auto;
+	background-color: rgba(233, 227, 227, 0.562);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+} 
+
+p {
+	color: rgb(94, 89, 89);
+	font-size: clamp(11px, 1.7vw, 60px);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+.arrivals {
+	height: clamp(60px, 10vw, 300px);
+	width: clamp(200px, 30%, 800px);
+	margin: auto;
+	background-color: firebrick;
+}
+
+.arrivals img {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.cards {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.icard {
+	height: 35vw;
+	width: 32%;
+	margin-bottom: 15px;
+}
+
+.icard img {
+	height: 100%;
+	width: 100%;
+}
+
+/* Tablet view */
+@media (max-width: 770px) {
+	.icard {
+		height: 50vw;
+		width: 49%;
+	}
+}
+
+/* Mobile view */
+@media (max-width: 450px) {
+	.herobox {
+		display: block;
+	}
+
+	.herobox1, .herobox2, .herobox3 {
+		height: 70vw;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: clamp(15px, 1.7vw, 30px);
+	}
+
+	.cards {
+		display: block;
+	}
+
+	.icard {
+		height: 100vw;
+		width: 100%;
+	}
+}
+
+
+
