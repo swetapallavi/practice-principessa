@@ -103,7 +103,7 @@ header {
 }
 
 .menu-bar {
-	display: block;
+	display: none;
 }
 
 }
@@ -177,16 +177,14 @@ p {
 }
 
 .arrivals {
-	height: clamp(60px, 10vw, 300px);
+	height: clamp(60px, 10vw, 200px);
 	width: clamp(200px, 30%, 800px);
 	margin: auto;
-	background-color: firebrick;
 }
 
 .arrivals img {
 	height: 100%;
 	width: 100%;
-	display: block;
 }
 
 .cards {
@@ -199,8 +197,8 @@ p {
 
 .icard {
 	height: 35vw;
-	width: 32%;
-	margin-bottom: 15px;
+	width: 30%;
+	margin-bottom: 20px;
 }
 
 .icard img {
@@ -208,11 +206,22 @@ p {
 	width: 100%;
 }
 
+.brandbox {
+	height: clamp(60px, 10vw, 200px);
+	width: clamp(200px, 30%, 800px);
+	margin: auto;
+}
+
+.brandbox img {
+	height: 100%;
+	width: 100%;
+}
+
 /* Tablet view */
 @media (max-width: 770px) {
 	.icard {
-		height: 50vw;
-		width: 49%;
+		height: 55vw;
+		width: 47%;
 	}
 }
 
@@ -225,11 +234,15 @@ p {
 	.herobox1, .herobox2, .herobox3 {
 		height: 70vw;
 		width: 100%;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	p {
 		font-size: clamp(15px, 1.7vw, 30px);
+	}
+
+	.arrivals {
+		margin-bottom: 20px;
 	}
 
 	.cards {
@@ -237,7 +250,7 @@ p {
 	}
 
 	.icard {
-		height: 100vw;
+		height: 110vw;
 		width: 100%;
 	}
 }
