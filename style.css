@@ -14,13 +14,13 @@ header {
 }
 
 .logo {
-	height: 100%;
-	width: 25%;
+	height: clamp(90px, 100%, 200px);
+	width: clamp(120px, 25%, 500px);
 }
 
 .logo img {
-	height: clamp(90px, 100%, 200px);
-	width: clamp(120px, 100%, 500px);
+	height: 100%;
+	width: 100%;
 	display: block;
 }
 
@@ -133,7 +133,6 @@ main img {
 	background-position: center;
 	background-size: cover;
 	display: flex;
-	justify-content: center;
 	padding: 0;
 }
 
@@ -155,7 +154,6 @@ main img {
 	margin: auto;
 	border: 1px solid white;
 	display: flex;
-	justify-content: center;
 }
 
 .herobox5 {
@@ -206,16 +204,86 @@ p {
 	width: 100%;
 }
 
-.brandbox {
+.brand-header {
 	height: clamp(60px, 10vw, 200px);
 	width: clamp(200px, 30%, 800px);
 	margin: auto;
+	margin-bottom: 10px;
 }
 
-.brandbox img {
+.brand-header img {
 	height: 100%;
 	width: 100%;
 }
+
+.brands {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.brands p {
+	font-size: clamp(8px, 2vw, 40px);
+}
+.brand-box{
+	background-color: #f8f8f8;
+}
+footer {
+	background-color: #333333;
+	padding: 20px 0;
+}
+
+.footer-logo {
+	height: clamp(60px, 8vw, 200px);
+	width: clamp(130px, 20%, 500px);
+	/* height: 8vw;
+	width: 20%; */
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.footer-logo img {
+	height: 100%;
+	width: 100%;
+}
+
+ul.social {
+	margin: auto;
+	padding-bottom: 20px;
+	padding-left: 0;
+	width: 80%;
+	text-align: center;
+	border-bottom: 2px solid white;
+  }
+  
+  ul.social > li {
+	display: inline-block;
+  }
+  
+  ul.social > li > a {
+	display: inline-block;
+	text-align: center;
+	font-size: clamp(22px, 3vw,80px);
+    line-height: clamp(30px, 4vw,100px);
+    width: clamp(30px, 4vw,100px);
+    height: clamp(30px, 4vw,100px);
+    border-radius: clamp(30px, 4vw,100px);
+	background-color: white;
+	color: black;
+  }
+  
+  ul.social > li > a:hover {
+	text-decoration: none;
+	background-color: #ee7c22;
+  }
+
+  footer p {
+	  text-align: center;
+	  color: white;
+	  font-size: clamp(8px, 1.2vw, 70px);
+	  padding-top: 10px;
+  }
 
 /* Tablet view */
 @media (max-width: 770px) {
